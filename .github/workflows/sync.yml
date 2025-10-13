@@ -2,7 +2,7 @@ name: Sync Fork
 
 on:
   schedule:
-    - cron: '* */24 * * *' # everyday
+    - cron: '0 0 * * *' # everyday
   workflow_dispatch: # on button click
 
 jobs:
@@ -16,3 +16,4 @@ jobs:
           owner: liuwd15
           base: main
           head: main
+          ignore_fail: true
